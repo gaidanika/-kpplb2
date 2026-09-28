@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-run test</actionName>
+            <displayName>run test</displayName>
+            <goals>
+                <goal>clean</goal>
+                <goal>verify</goal>
+            </goals>
+        </action>
+        <action>
+            <actionName>run</actionName>
+            <packagings>
+                <packaging>jar</packaging>
+            </packagings>
+            <goals>
+                <goal>compile</goal>
+                <goal>exec:java</goal>
+            </goals>
+            <properties>
+                <exec.mainClass>ua.khnu.kpp.App</exec.mainClass>
+            </properties>
+        </action>
+    </actions>
